@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Likith Reddy Samala | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #1e1e2f, #29293d);
+      color: #f5f5f5;
+      text-align: center;
+      padding: 2rem;
+    }
+    .name {
+      font-size: 3.5rem;
+      color: #ff6b6b;
+      margin-bottom: 0.8rem;
+    }
+    .tagline {
+      font-size: 1.5rem;
+      color: #cccccc;
+      margin-bottom: 2rem;
+    }
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .nav-menu button {
+      background: none;
+      border: 2px solid #ff6b6b;
+      color: #ff6b6b;
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+    .nav-menu button:hover {
+      background: #ff6b6b;
+      color: white;
+      box-shadow: 0 0 12px #ff6b6b88;
+    }
+    .section {
+      display: none;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+      animation: fadeIn 0.5s ease-in-out;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    .section.active {
+      display: block;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      color: #ff6b6b;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 1rem;
+      color: #dddddd;
+    }
+    a {
+      color: #ff6b6b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .resume-download {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #ff6b6b;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+    .resume-download:hover {
+      background: #e85c5c;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @media(max-width: 600px) {
+      .name { font-size: 2.3rem; }
+      .tagline { font-size: 1.2rem; }
+      .nav-menu button { font-size: 1rem; padding: 0.5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="name">Likith Reddy Samala</h1>
+  <p class="tagline">Full-Stack Developer | AI/ML Enthusiast | Problem Solver</p>
+  
+  <nav class="nav-menu">
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('resume')">Resume</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <!-- About Section -->
+  <div id="about" class="section active">
+    <h2>About Me</h2>
+    <p>
+      I am a highly motivated Computer Science student at GITAM University with a strong interest in developing full-stack web applications and exploring AI/ML solutions. My goal is to create efficient, scalable, and user-centric products. I’m constantly learning new technologies and believe in continuous improvement.
+    </p>
+    <p>
+      With experience in real-time web development, machine learning, and data visualization, I aim to contribute to innovative projects and solve real-world problems using technology. I’m also a team player who values collaboration and creative problem-solving.
+    </p>
+  </div>
+
+  <!-- Skills Section -->
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> C, Python, Java, Data Structures & Algorithms</li>
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js, MongoDB</li>
+      <li><strong>Cloud & Tools:</strong> Microsoft Azure, Git, VS Code</li>
+      <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
+      <li><strong>AI/ML:</strong> Scikit-learn, Pandas, Matplotlib, TensorFlow (Basics)</li>
+    </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>1. E-Commerce Platform with Recommendation Engine</strong><br>
+      Developed a full-stack e-commerce platform with personalized recommendations using collaborative filtering. Integrated payment gateways and order tracking for seamless user experience.</li>
+
+      <li><strong>2. Space Exploration Dashboard</strong><br>
+      Built a dashboard using NASA's Open API and Chart.js to display live data on space missions and astronomical events. Designed with React.js for responsiveness and interactivity.</li>
+
+      <li><strong>3. Fraud Detection System using Machine Learning</strong><br>
+      Created an ML model using logistic regression and decision trees to detect fraudulent transactions with 95% accuracy. Deployed as a real-time detection web app.</li>
+    </ul>
+  </div>
+
+  <!-- Resume Section -->
+  <div id="resume" class="section">
+    <h2>Resume</h2>
+    <p>You can download my resume by clicking the button below. If download doesn't start, right-click and choose "Save link as".</p>
+    <a href="likith_resume.pdf" download class="resume-download">📄 Download Resume</a>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:likithsamala5@gmail.com">likithsamala5@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/likithsamala/" target="_blank">linkedin.com/in/likithsamala/</a></p>
+    <p>GitHub: <a href="https://github.com/likith-samala" target="_blank">github.com/likith-samala</a></p>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
